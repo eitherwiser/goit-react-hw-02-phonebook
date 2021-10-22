@@ -13,7 +13,7 @@ export default function ContacstList({ contacts, onDelete }) {
         <button type="button" className={s.btn}
           onClick={(e) => onDelete(e.currentTarget.parentNode.id)}
           >
-          <span class="material-icons">
+          <span className="material-icons">
 delete
 </span>
         </button>

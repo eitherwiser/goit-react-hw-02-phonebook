@@ -8,8 +8,10 @@ export default function ContacstList({ contacts, onDelete }) {
       <h6>Contacts list</h6>
         {contacts.map(({id, name, number}) => (
           <li key={id} id={id} className={s.list_item}>
+            <a href={"tel:"+{ number }}>
             <span>{name}&nbsp;:</span>
             <span>{number}</span>
+            </a>
         <button type="button" className={s.btn}
           onClick={(e) => onDelete(e.currentTarget.parentNode.id)}
           >
